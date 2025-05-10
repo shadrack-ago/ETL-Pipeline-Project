@@ -10,11 +10,9 @@ Prerequisites:
 Step 0: Virtual Environment Setup
 --------------------------------
 # Create and activate virtual environment
-After installing Python, run>
+After installing Python (cd to your prefered project folder, then run>
 
-pip install uv (after you've cd to your prefered project folder)
-
-Now run
+pip install uv 
 
 python -m venv .venv       # to create virt environment
 
