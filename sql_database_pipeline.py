@@ -11,7 +11,10 @@ def load_entire_salesdb():
         destination="duckdb",
         dataset_name="salesdb_data"
     )
-
+    # Load data from the source
+    # Run with append disposition (default)
+    # load_info = pipeline.run(source)
+    
     # Run with replace disposition (overwrites existing data)
     load_info = pipeline.run(source, write_disposition="replace")
     
