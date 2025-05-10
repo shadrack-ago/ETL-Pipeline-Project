@@ -1,0 +1,1 @@
+dlt[duckdb,sql-database]>=1.10.0
