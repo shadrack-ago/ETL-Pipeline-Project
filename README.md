@@ -14,11 +14,11 @@ After installing Python (cd to your prefered project folder, then run>
 
 pip install uv 
 
-python -m venv .venv       # to create virt environment
+python -m venv .venv           # to create virt environment
 
-.\venv\Scripts\activate   # to activate on Windows
+.\venv\Scripts\activate       # to activate on Windows
 
-source venv/bin/activate  #for Linux/Mac
+source venv/bin/activate      #for Linux/Mac
 
  Install dlt library
  
