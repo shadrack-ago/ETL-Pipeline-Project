@@ -13,14 +13,17 @@ Step 0: Virtual Environment Setup
 After installing Python, run>
 
 pip install uv (after you've cd to your prefered project folder)
-then run
-python -m venv .venv       # to create the environment
 
-.\venv\Scripts\activate   # then to activate on Windows
+Now run
 
-source venv/bin/activate  # Linux/Mac
+python -m venv .venv       # to create virt environment
+
+.\venv\Scripts\activate   # to activate on Windows
+
+source venv/bin/activate  #for Linux/Mac
 
  Install dlt library
+ 
 uv pip install -U dlt
 
  Done!
