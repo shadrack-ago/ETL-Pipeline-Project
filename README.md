@@ -132,7 +132,7 @@ Troubleshooting
 GitHub Integration
 -----------------
 # To run from your GitHub repo:
-git clone https://github.com/your/repo.git
+git clone [https://github.com/your/repo.git](https://github.com/shadrack-ago/ETL-Pipeline-Project.git)
 cd repo
 pip install -r requirements.txt
 python sql_database_pipeline.py
