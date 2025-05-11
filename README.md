@@ -38,7 +38,8 @@ File: sql_database_pipeline.py
 import dlt
 from dlt.sources.sql_database import sql_database
 
-def load_mysql_to_duckdb():
+
+    def load_mysql_to_duckdb():
     # Load ALL tables (or specify with .with_resources())
     source = sql_database()
     
