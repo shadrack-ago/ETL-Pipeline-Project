@@ -16,7 +16,7 @@ pip install uv
 
 python -m venv .venv           # to create virt environment
 
-.\venv\Scripts\activate       # to activate on Windows
+.venv\Scripts\activate       # to activate on Windows
 
 source venv/bin/activate      #for Linux/Mac
 
