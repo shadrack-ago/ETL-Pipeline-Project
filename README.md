@@ -5,18 +5,23 @@ Prerequisites:
 - Python 3.10+
 - MySQL Workbench installed
 - Terminal/Command Prompt access
+- Code Editor (VScode)
 
 Step 0: Virtual Environment Setup
 --------------------------------
 # Create and activate virtual environment
-After installing Python
-pip install uv (after you've cd to project folder)
-then run
-python -m venv .venv
-.\venv\Scripts\activate  # Windows
-source venv/bin/activate # Linux/Mac
+After installing Python (cd to your prefered project folder, then run>
+
+pip install uv 
+
+python -m venv .venv           # to create virt environment
+
+.venv\Scripts\activate       # to activate on Windows
+
+source venv/bin/activate      #for Linux/Mac
 
  Install dlt library
+ 
 uv pip install -U dlt
 
  Done!
@@ -33,7 +38,8 @@ File: sql_database_pipeline.py
 import dlt
 from dlt.sources.sql_database import sql_database
 
-def load_mysql_to_duckdb():
+
+    def load_mysql_to_duckdb():
     # Load ALL tables (or specify with .with_resources())
     source = sql_database()
     
@@ -45,10 +51,12 @@ def load_mysql_to_duckdb():
     
     # Run with replace disposition (options: replace/append/merge)
     load_info = pipeline.run(source, write_disposition="replace")
-    print(load_info)
+    print(load_info) 
+    
+    if __name__ == "__main__":
+     load_mysql_to_duckdb()  
 
-  if __name__ == "__main__":
-     load_mysql_to_duckdb()
+  
 
 Step 3: Add MySQL Credentials
 ----------------------------
@@ -136,6 +144,8 @@ git clone [https://github.com/your/repo.git](https://github.com/shadrack-ago/ETL
 cd repo
 pip install -r requirements.txt
 python sql_database_pipeline.py
+
+Dashboard deployed at (https://etl-pipeline-project-gmxxuve2xfyatytxq42jn5.streamlit.app)
 
 Notes:
 - Store secrets.toml in .gitignore
